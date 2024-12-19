@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brand Site</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav>
+        <div class="logo-section">
+            <img src="./images/logo.png" alt="logo">
+            <h4>Communities</h4>
+        </div>
+
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#home">Company</a></li>
+            <li><a href="#projects">Project</a></li>
+            <li><a href="#register">Register</a></li>
+            <li>
+                <div id="clock"></div>
+            </li>
+        </ul>
+        <i class="fa-solid fa-bars" id="menu"></i>
+    </nav>
+
+    <section class="home" id="home">
+        <div class="home-content hidden">
+            <h1>MineCraft Communities</h1>
+            <p>Connecting Minecraft players to their favorite servers since 2020.</p>
+
+            <a href="#register" class="cta-btn">Register</a>
+        </div>
+
+        <div class="minecraft-boat">
+            <img src="./images/giphy.webp" alt="boat">
+        </div>
+
+    </section>
+
+    <!-- Projects Sections -->
+    <section class="projects" id="projects">
+        <div class="projects-container">
+
+
+            <h2 class="hidden">Projects</h2>
+            <p>Community members make great builds. This is where we will showcase some of the best builds in out
+                community.
+            </p>
+            <div class="carousel-content">
+                <div class="carousel-text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi molestiae repellat ea officiis at
+                        eum.</p>
+                    <img src="./images/nitwit.gif" alt="nitwit" id="nitwit">
+
+                </div>
+
+                <div class="carousel-container hidden">
+                    <div class="carousel">
+                        <div class="carousel-images">
+                            <img src="./images/Communities+on+Mars.png" alt="Image 1">
+                            <img src="./images/Community_Media-Block-B-0_Influencer-Discord_1332x750.avif"
+                                alt="Image 2">
+                            <img src="./images/minecraft-community.jpg" alt="Image 3">
+                        </div>
+                        <button class="prev carousel-button">Prev</button>
+                        <button class="next carousel-button">Next</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="register" id="register">
+        <div class="registration-content">
+            <h2 class="hidden">Registration</h2>
+
+
+            <div class="form-wrapper hidden">
+                <form id="registration-form">
+
+                    <label for="full-name">Full Name:</label>
+                    <input type="text" id="full-name" name="full-name" required>
+                    <span class="error" id="name-error"></span>
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                    <span class="error" id="email-error"></span>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    <span class="error" id="password-error"></span>
+
+                    <label for="confirm-password">Confirm Password:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                    <span class="error" id="confirm-password-error"></span>
+
+                    <div class="newsletter">
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                        <span>Sign up for the newsletter</span>
+                    </div>
+                    <button type="submit">Register</button>
+                </form>
+            </div>
+        </div>
+        <video id="myVideo" autoplay muted loop>
+            <source src="./videos/bgvideo.mp4" type="video/mp4">
+        </video>
+
+    </section>
+
+    <section class="footer" id="footer">
+        <h4 class="hidden">Join us on all the major social media platforms.</h4>
+        <div class="socials-container">
+            <a href="http://www.linkedin.com" target="__blank"><span><i class="fa-brands fa-linkedin"></i></span></a>
+            <a href=""><span><i class="fa-brands fa-twitter"></i></span></a>
+
+            <span><i class="fa-brands fa-facebook"></i></span>
+            <span><i class="fa-brands fa-instagram"></i></span>
+            <span><i class="fa-brands fa-youtube"></i></span>
+        </div>
+    </section>
+    <script src="./script.js"></script>
+</body>
+
+</html>
